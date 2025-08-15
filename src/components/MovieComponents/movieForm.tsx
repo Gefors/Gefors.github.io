@@ -135,7 +135,7 @@ export const Form = ({ onAddMovie, onMovieSaved }: FormProps) => {
       <form id="add-movie-form" onSubmit={handleSubmit}>
         <fieldset className="border-0">
           <p className="text-4xl text-center font-bold font-mono text-gray-800 mb-6">
-            OMDb
+            IMDb 2.0
           </p>
 
           <div className="mb-4 relative">

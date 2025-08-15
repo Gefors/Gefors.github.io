@@ -1,5 +1,10 @@
 import { useState } from "react";
-import PictureTwo from "../../assets/wololo.jpg";
+import PictureTwo from "../../assets/Walter.jpg";
+import PictureOne from "../../assets/MeSquare.jpg";
+import PictureThree from "../../assets/Bild_på_mig.jpg";
+import PictureFour from "../../assets/Italien.jpg";
+import PictureFive from "../../assets/ItalienUtsikt.jpg";
+import PictureSix from "../../assets/JobbaMedHund.jpg";
 
 function PictureNet() {
   const [selectedImage, setSelectedImage] = useState<{
@@ -10,34 +15,34 @@ function PictureNet() {
 
   const pictures = [
     {
-      id: "memory-1",
+      id: "Me",
+      src: PictureOne,
+      alt: "Me",
+    },
+    {
+      id: "Walter",
       src: PictureTwo,
-      alt: "Couple at engagement party",
+      alt: "Walter",
     },
     {
-      id: "memory-2",
-      src: PictureTwo,
-      alt: "First dance rehearsal",
+      id: "Me at Öland",
+      src: PictureThree,
+      alt: "Me at Öland",
     },
     {
-      id: "memory-3",
-      src: PictureTwo,
-      alt: "Romantic dinner date",
+      id: "Swimming in Italy",
+      src: PictureFour,
+      alt: "Swimming in Italy",
     },
     {
-      id: "memory-4",
-      src: PictureTwo,
-      alt: "Walking on the beach",
+      id: "Sicily at a distance",
+      src: PictureFive,
+      alt: "Italy view",
     },
     {
-      id: "memory-5",
-      src: "https://via.placeholder.com/400x300/f3f4f6/6b7280?text=Wedding+Photo+5",
-      alt: "Celebrating with family",
-    },
-    {
-      id: "memory-6",
-      src: "https://via.placeholder.com/400x300/f3f4f6/6b7280?text=Wedding+Photo+6",
-      alt: "Ring exchange moment",
+      id: "Woorking with a dog...",
+      src: PictureSix,
+      alt: "woorking with a dog",
     },
   ];
 
@@ -73,8 +78,8 @@ function PictureNet() {
   };
 
   return (
-    <div className="py-12 px-4 bg-blue-950">
-      <h2 className="text-4xl font-mono font-bold text-center mb-8 text-white">
+    <div className="py-12 px-4 bg-indigo-200">
+      <h2 className="text-4xl font-mono font-bold text-center mb-8 text-gray-800">
         Some Pictures
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -91,16 +96,13 @@ function PictureNet() {
             }}
             aria-label={`View larger image: ${picture.alt}`}
           >
-            {/* Decorative frame */}
             <div className="relative overflow-hidden rounded-md">
               <img
                 src={picture.src}
                 alt={picture.alt}
                 className="w-full h-64 object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
               />
-              {/* Frame overlay */}
               <div className="absolute inset-0 border-4 border-white rounded-md shadow-inner pointer-events-none"></div>
-              {/* Click indicator */}
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center rounded-md">
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white rounded-full p-2">
                   <svg
@@ -119,9 +121,8 @@ function PictureNet() {
                 </div>
               </div>
             </div>
-            {/* Optional caption */}
-            <p className="text-center text-gray-600 mt-3 text-sm font-medium">
-              Memory {index + 1}
+            <p className="text-center text-gray-600 mt-3 text-sm font-medium font-mono">
+              {picture.id}
             </p>
           </button>
         ))}

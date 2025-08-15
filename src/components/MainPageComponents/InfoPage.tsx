@@ -25,7 +25,8 @@ function InfoPage() {
     {
       id: "hobbies",
       title: "Hobbys & Interests",
-      content: " To be done",
+      content:
+        "I am a very active person who enjoys going to the gym several times a week. I also have a passion for movies and music, and enjoy listening to new and different music genres that I wouldn't normally listen to. As this is how I discovered some of my favorite artists / bands, like: Radiohead, Kent, Black Country,New Road and Ludovico Einaudi. I highly recommend giving them a listen!",
     },
   ];
 
@@ -42,9 +43,9 @@ function InfoPage() {
   };
 
   return (
-    <div className="py-12 px-4 bg-blue-950">
+    <div className="py-12 px-4 bg-indigo-200">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold font-mono text-center mb-8 text-white">
+        <h2 className="text-4xl font-bold font-mono text-center mb-8 text-gray-800">
           Information about me
         </h2>
 
@@ -100,14 +101,14 @@ function InfoPage() {
             </button>
           </div>
 
-          <div className="flex justify-center space-x-2 p-6 bg-sky-200">
+          <div className="flex justify-center space-x-2 p-6 bg-blue-950">
             {slides.map((slide, index) => (
               <button
                 key={slide.id}
                 onClick={() => goToSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-200 ${
                   index === currentSlide
-                    ? "bg-blue-950 scale-125"
+                    ? "bg-sky-200 scale-125"
                     : "bg-white hover:bg-orange-100"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
@@ -116,7 +117,7 @@ function InfoPage() {
           </div>
         </div>
 
-        <div className="text-center mt-4 font-mono text-white">
+        <div className="text-center mt-4 font-mono text-gray-600">
           {currentSlide + 1} of {slides.length}
         </div>
       </div>

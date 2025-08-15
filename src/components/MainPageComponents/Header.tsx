@@ -1,8 +1,8 @@
-import Logo from "../../assets/Me.jpg";
+import Logo from "../../assets/Logo.png";
 
 function Header() {
   return (
-    <div className="relative flex items-center w-full py-4 bg-gradient-to-r from-sky-200 to-blue-950">
+    <div className="relative flex items-center w-full py-4 bg-gradient-to-r from-blue-950 to-sky-200">
       <div className="flex flex-row items-center mx-10">
         <img
           src={Logo}

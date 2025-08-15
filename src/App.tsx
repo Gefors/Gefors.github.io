@@ -38,8 +38,8 @@ function App() {
             description="During my education, I had a particular focus on learning about artificial intelligence.
               In my third year at the university, we students had the opportunity to choose courses that we wanted to attend. Whit me picking both of the two AI related courses that were available. With one of them deepening my knowledge to develop AI in code and the other one deepening my knowledge on how and where AI can be used in our society. I also wrote my bachelor thesis regarding the use of ChatGPT and its impact on system developer students.                 
               "
-            gradientFrom="from-blue-50"
-            gradientTo="to-blue-100"
+            gradientFrom="from-blue-100"
+            gradientTo="to-blue-200"
           >
             <div>
               <p className="text-lg text-gray-600 mb-6 font-mono">
@@ -105,12 +105,13 @@ function App() {
             </div>
             <div>
               <p className="text-lg text-gray-600 mb-6 font-mono">
-                As movies is one of my hobbies. You can also try my movie API
-                project below, where you can search for movies and save them to
-                your list. The project uses the OMDb API to fetch movie data and
-                the movies you save to your list are stored in the local storage
-                of your browser. So even if you refresh or close the page, your
-                saved movies will still be there!
+                Movies are one of my hobbies, as I mentioned on the home page.
+                So I have built a movie API project below, where you can search
+                for movies and save them to your list. The project uses the OMDb
+                API to fetch movie data and the movies you save to your list are
+                stored in the local storage of your browser. So even if you
+                refresh or close the page, your saved movies will still be
+                there!
               </p>
             </div>
             <div>
@@ -123,7 +124,7 @@ function App() {
         return (
           <PageTemplate
             title="Algorithms Page"
-            description="Here you can find some of my algorithm projects that I have worked on during my education. These projects showcase various algorithms and their implementations."
+            description="Here you can find some of my algorithm projects that I have worked on during my education. These projects showcase various algorithms and their implementations. Like a algorithm that solves the Knapsack problem and a collection of sorting algorithms."
             gradientFrom="from-green-50"
             gradientTo="to-emerald-100"
           >
@@ -154,7 +155,7 @@ function App() {
                 Word Chain Algorithm
               </a>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 pb-10">
               <a
                 href="https://github.com/Gefors/AlgorithmAnalysis"
                 className="text-blue-600 hover:text-blue-800 underline text-lg font-medium font-mono"
@@ -162,6 +163,14 @@ function App() {
               >
                 Algorithm Analysis Project
               </a>
+            </div>
+            <div>
+              <p className="text-lg text-gray-600 mb-6 font-mono">
+                Merge sort and selection sort are two of the most common sorting
+                algorithms. Below you can find a project where you can compare
+                the two algorithms and see how they perform on different data
+                sets.
+              </p>
             </div>
           </PageTemplate>
         );

@@ -11,7 +11,7 @@ function Navbar({ currentPage, setCurrentPage }: NavbarProps) {
 
   return (
     <nav className="navbar">
-      <ul className="flex items-center font-mono justify-between p-3 bg-sky-950 text-white">
+      <ul className="flex items-center font-mono justify-between p-3 bg-blue-950 text-white">
         <li>
           <a
             href="#home"
