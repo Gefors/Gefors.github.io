@@ -11,7 +11,7 @@ export const AlgorithmsMain = () => {
           <div
             key={`${items}-${settings.arrayLength}-${idx}`}
             className="flex-1"
-            style={{ backgroundColor: "#482", height: `${items / 7}%` }}
+            style={{ backgroundColor: "#172554", height: `${items / 7}%` }}
             id={`${idx}`}
           />
         ))}

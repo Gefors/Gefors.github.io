@@ -74,10 +74,10 @@ export const AlgorithmsContext: React.FC<Props> = ({ children }) => {
       const div = document.getElementById(`${idx}`);
       if (!div) return;
       setTimeout(() => {
-        div.style.backgroundColor = "#b041f0";
+        div.style.backgroundColor = "#fffbeb";
         div.style.height = `${newHight / 7}%`;
         setTimeout(() => {
-          div.style.backgroundColor = "#482";
+          div.style.backgroundColor = "#172554";
           if (index === arr.length - 1) {
             setItems(newArray);
           }
@@ -92,14 +92,14 @@ export const AlgorithmsContext: React.FC<Props> = ({ children }) => {
       const div2 = document.getElementById(`${second}`);
       if (!div || !div2) return;
       setTimeout(() => {
-        div.style.backgroundColor = "#b041f0";
-        div2.style.backgroundColor = "#b041f0";
+        div.style.backgroundColor = "#fffbeb";
+        div2.style.backgroundColor = "#fffbeb";
         const divHeight = div.style.height;
         div.style.height = div2.style.height;
         div2.style.height = divHeight;
         setTimeout(() => {
-          div.style.backgroundColor = "#482";
-          div2.style.backgroundColor = "#482";
+          div.style.backgroundColor = "#172554";
+          div2.style.backgroundColor = "#172554";
           if (index === arr.length - 1) {
             setItems(newArray);
           }

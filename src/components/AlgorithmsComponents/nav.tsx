@@ -20,20 +20,20 @@ const Nav = () => {
   };
 
   return (
-    <nav className="max-w-2xl mx-auto rounded-lg shadow-lg bg-blue-950 grid grid-flow-row">
+    <nav className="max-w-2xl mx-auto rounded-lg shadow-lg bg-emerald-100 grid grid-flow-row">
       <div className="flex items-center justify-center w-full my-2 gap-5">
         <div>
           <button
-            className={`border border-teal-100 shadow-md py-2 px-4 transition-all active:scale-95 ${
-              settings.algorithmType === "mergeSort" && "text-purple-500"
+            className={`mt-3 ms-3 rounded-lg bg-blue-950 px-4 py-2 hover:bg-blue-800 transition-colors duration-200 font-mono ${
+              settings.algorithmType === "mergeSort" && "text-white"
             }`}
             onClick={() => onAlgorithmChange("mergeSort")}
           >
             Merge Sort
           </button>
           <button
-            className={`border border-teal-100 shadow-md py-2 px-4 transition-all active:scale-95 ${
-              settings.algorithmType === "insertionSort" && "text-purple-500"
+            className={`mt-3 ms-3 rounded-lg bg-blue-950 px-4 py-2 hover:bg-blue-800 transition-colors duration-200 font-mono ${
+              settings.algorithmType === "insertionSort" && "text-white"
             }`}
             onClick={() => onAlgorithmChange("insertionSort")}
           >
@@ -41,14 +41,14 @@ const Nav = () => {
           </button>
         </div>
         <button
-          className="underline"
+          className="underline mt-3 ms-3 rounded-lg bg-blue-950 text-white px-4 py-2 hover:bg-blue-800 transition-colors duration-200 font-mono mr-4"
           onClick={() => sort(settings.algorithmType)}
         >
           Sort
         </button>
       </div>
       <div className="flex flex-col items-center justify-center w-full my-2 gap-5">
-        <label htmlFor="itemsAmount">
+        <label className="font-mono" htmlFor="itemsAmount">
           Array Length: {settings.arrayLength}
         </label>
         <input
@@ -60,7 +60,9 @@ const Nav = () => {
           min={1}
           onChange={onArrayChange}
         />
-        <label htmlFor="delay">Delay: {settings.delay}</label>
+        <label className="font-mono" htmlFor="delay">
+          Delay: {settings.delay}
+        </label>
         <input
           type="range"
           name="delay"
