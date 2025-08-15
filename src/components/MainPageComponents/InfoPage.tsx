@@ -26,7 +26,7 @@ function InfoPage() {
       id: "hobbies",
       title: "Hobbys & Interests",
       content:
-        "I am a very active person who enjoys going to the gym several times a week. I also have a passion for movies and music, and enjoy listening to new and different music genres that I wouldn't normally listen to. As this is how I discovered some of my favorite artists / bands, like: Radiohead, Kent, Black Country,New Road and Ludovico Einaudi. I highly recommend giving them a listen!",
+        "I am a very active person who enjoys going to the gym several times a week. I also have a passion for movies and music, and enjoy listening to new and different music genres that I wouldn't normally listen to. As this is how I discovered some of my favorite artists / bands, like: Radiohead, Kent, Black Country,New Road and Ludovico Einaudi. If you haven't already, I highly recommend giving them a listen!",
     },
   ];
 

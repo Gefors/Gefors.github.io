@@ -5,8 +5,8 @@ export const AlgorithmsMain = () => {
   const { items } = useContext(ItemsContext);
   const { settings } = useContext(SettingsContext);
   return (
-    <section className="row-span-5">
-      <div className="flex w-full h-full items-end overflow-hidden">
+    <section className="row-span-5 flex flex-col items-center justify-end">
+      <div className="flex w-full h-2/4 items-end overflow-hidden">
         {items.map((items, idx) => (
           <div
             key={`${items}-${settings.arrayLength}-${idx}`}

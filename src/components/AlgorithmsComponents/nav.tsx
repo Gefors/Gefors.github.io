@@ -47,7 +47,7 @@ const Nav = () => {
           Sort
         </button>
       </div>
-      <div className="flex flex-col items-center justify-center w-full my-2 gap-5">
+      <div className="flex flex-col items-center justify-center w-full px-4 mt-2 mb-4 gap-1">
         <label className="font-mono" htmlFor="itemsAmount">
           Array Length: {settings.arrayLength}
         </label>

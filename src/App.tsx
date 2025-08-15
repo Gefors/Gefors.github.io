@@ -174,7 +174,7 @@ function App() {
                 sets.
               </p>
             </div>
-            <main className="grid grid-rows-6 bg-grey-100">
+            <main className="grid grid-rows-2 bg-grey-100">
               <Nav />
               <AlgorithmsMain />
             </main>
