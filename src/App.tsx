@@ -7,6 +7,8 @@ import PageTemplate from "./components/MainPageComponents/PageTemplate";
 import Form from "./components/MovieComponents/movieForm";
 import MovieContainer from "./components/MovieComponents/movieContainer";
 import { TicTacToeAI } from "./components/TicTacToeComponents/TicTacToeAI";
+import Nav from "./components/AlgorithmsComponents/Nav";
+import { AlgorithmsMain } from "./components/AlgorithmsComponents/AlgorithmsMain";
 
 interface Movie {
   name: string;
@@ -172,6 +174,10 @@ function App() {
                 sets.
               </p>
             </div>
+            <main className="grid grid-rows-6 bg-grey-100">
+              <Nav />
+              <AlgorithmsMain />
+            </main>
           </PageTemplate>
         );
       case "contact":
