@@ -7,7 +7,7 @@ import PageTemplate from "./components/MainPageComponents/PageTemplate";
 import Form from "./components/MovieComponents/movieForm";
 import MovieContainer from "./components/MovieComponents/movieContainer";
 import { TicTacToeAI } from "./components/TicTacToeComponents/TicTacToeAI";
-import Nav from "./components/AlgorithmsComponents/Nav";
+import Nav from "./components/AlgorithmsComponents/nav";
 import { AlgorithmsMain } from "./components/AlgorithmsComponents/AlgorithmsMain";
 
 interface Movie {
