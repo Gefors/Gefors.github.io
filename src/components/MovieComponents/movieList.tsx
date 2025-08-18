@@ -121,7 +121,7 @@ export const MovieList = ({ name, grade, onClose }: MovieListProps) => {
       data-title={name}
       className="bg-amber-50 rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow"
     >
-      <div className="flex items-start space-x-4">
+      <div className="flex flex-col sm:flex-row items-start sm:space-x-4 space-y-2 sm:space-y-0">
         <div className="flex-shrink-0">
           {movieData?.Poster && movieData.Poster !== "N/A" ? (
             <img
@@ -160,23 +160,25 @@ export const MovieList = ({ name, grade, onClose }: MovieListProps) => {
           </div>
         </div>
 
-        <div className="flex-1 min-w-0 bg-amber-50">
-          <div className="flex items-start justify-between">
-            <div className="flex-1">
-              <h3 className="text-lg font-mono font-semibold text-gray-900 truncate">
+        <div className="flex-1 min-w-0 bg-amber-50 w-full">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between w-full">
+            <div className="flex-1 min-w-0 w-full">
+              <h3 className="text-lg font-mono font-semibold text-gray-900 break-words whitespace-pre-line">
                 {name}
               </h3>
               {movieData?.Year && (
-                <p className="text-sm text-gray-600 mb-2">{movieData.Year}</p>
+                <p className="text-sm text-gray-600 mb-2 break-words whitespace-pre-line">
+                  {movieData.Year}
+                </p>
               )}
 
-              <div className="flex items-center space-x-2">
-                <span className="text-sm font-medium font-mono text-gray-700">
+              <div className="flex items-center space-x-2 flex-wrap break-words w-full">
+                <span className="text-sm font-medium font-mono text-gray-700 break-words">
                   Betyg:
                 </span>
-                <div className="flex items-center space-x-1">
+                <div className="flex items-center space-x-1 flex-wrap break-words w-full">
                   {renderStars(parseInt(grade))}
-                  <span className="text-sm font-mono text-gray-600 ml-2">
+                  <span className="text-sm font-mono text-gray-600 ml-2 break-words whitespace-pre-line w-full sm:w-auto">
                     {grade}/10
                   </span>
                 </div>
@@ -187,7 +189,7 @@ export const MovieList = ({ name, grade, onClose }: MovieListProps) => {
               type="button"
               onClick={handleDelete}
               aria-label="Delete movie"
-              className="flex-shrink-0 p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors"
+              className="flex-shrink-0 p-2 text-gray-400 hover:text-red-600 hover:bg-red-50 rounded-full transition-colors mt-2 sm:mt-0"
             >
               <svg
                 className="w-5 h-5"

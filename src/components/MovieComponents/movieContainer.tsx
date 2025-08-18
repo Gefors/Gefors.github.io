@@ -106,10 +106,10 @@ const MovieContainer = () => {
             </svg>
           </div>
           <h3 className="text-lg font-medium text-gray-700 mb-2">
-            Inga sparade filmer
+            No saved movies
           </h3>
           <p className="text-gray-500">
-            Lägg till filmer med formuläret ovan för att se dem här.
+            Add movies using the form above to see them here.
           </p>
         </div>
       ) : (
