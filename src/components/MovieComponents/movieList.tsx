@@ -17,6 +17,7 @@ interface MovieListProps {
 export const MovieList = ({ name, grade, onClose }: MovieListProps) => {
   const [movieData, setMovieData] = useState<Movie | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  void isLoading;
 
   useEffect(() => {
     const loadMovieData = () => {

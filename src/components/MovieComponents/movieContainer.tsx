@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { MovieList } from "./movieList";
 import FunctionButtons from "./functionButton";
 
@@ -13,6 +13,7 @@ interface MovieWithRating {
 const MovieContainer = () => {
   const [movies, setMovies] = useState<MovieWithRating[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  void isLoading;
 
   const loadMoviesFromStorage = () => {
     try {

@@ -19,6 +19,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
   const [movies, setMovies] = useState<Movie[]>([]);
+  void movies;
 
   const addMovie = (name: string, grade: string) => {
     setMovies((movie) => [...movie, { name, grade }]);

@@ -6,7 +6,7 @@ export const getAIMoves = (
   const AIMoves: Array<[number, number]> = [];
 
   gameBoard.forEach((row, rowIndex) =>
-    row.map((col, colIndex) => {
+    row.map((_col, colIndex) => {
       if (!gameBoard[rowIndex][colIndex]) {
         const newGameBoard = gameBoard.map((r) => [...r]);
         newGameBoard[rowIndex][colIndex] = player;
@@ -20,7 +20,7 @@ export const getAIMoves = (
   const opponent = player === "X" ? "O" : "X";
 
   gameBoard.some((row, rowIndex) =>
-    row.some((col, colIndex) => {
+    row.some((_col, colIndex) => {
       if (!gameBoard[rowIndex][colIndex]) {
         const newGameBoard = gameBoard.map((r) => [...r]);
 
@@ -44,7 +44,7 @@ export const getAIMoves = (
 
   const emptyCells: Array<[number, number]> = [];
   gameBoard.forEach((row, rowIndex) =>
-    row.forEach((col, colIndex) => {
+    row.forEach((_col, colIndex) => {
       if (!gameBoard[rowIndex][colIndex]) {
         emptyCells.push([rowIndex, colIndex]);
       }

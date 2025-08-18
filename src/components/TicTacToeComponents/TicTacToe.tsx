@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GameBoard } from "./GameBoard";
 
 type GameBoardArray = Array<Array<string | null>>;

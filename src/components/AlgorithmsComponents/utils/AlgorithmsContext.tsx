@@ -28,7 +28,7 @@ type SettingsContextType = {
 
 export const SettingsContext = createContext<SettingsContextType>({
   settings: initialSettings,
-  sort: (algorithmType) => {},
+  sort: (_algorithmType) => {},
 });
 
 type ItemsContextType = {
