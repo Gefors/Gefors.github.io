@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { GameBoard } from "./GameBoard";
-import { getAIMoves } from "./Util";
+import { getAIMoves } from "./util";
 
 type GameBoardArray = Array<Array<string | null>>;
 
