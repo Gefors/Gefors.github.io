@@ -50,7 +50,7 @@ function InfoPage() {
         </h2>
 
         <div className="relative bg-white rounded-xl shadow-2xl overflow-hidden">
-          <div className="relative h-96 flex items-center justify-center p-8">
+          <div className="relative h-auto min-h-[16rem] sm:h-96 flex items-center justify-center p-8">
             <div className="text-center p-10 max-w-2xl">
               <h3 className="text-3xl font-bold font-mono mb-6 text-gray-800">
                 {slides[currentSlide].title}

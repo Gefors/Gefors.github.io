@@ -9,6 +9,7 @@ import MovieContainer from "./components/MovieComponents/movieContainer";
 import { TicTacToeAI } from "./components/TicTacToeComponents/TicTacToeAI";
 import Nav from "./components/AlgorithmsComponents/nav";
 import { AlgorithmsMain } from "./components/AlgorithmsComponents/AlgorithmsMain";
+import Bottom from "./components/MainPageComponents/Bottom";
 
 interface Movie {
   name: string;
@@ -241,6 +242,7 @@ function App() {
       <Header />
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
+      <Bottom />
     </>
   );
 }
