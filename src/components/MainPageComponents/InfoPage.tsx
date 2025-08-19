@@ -20,7 +20,7 @@ function InfoPage() {
       id: "webDevelopment",
       title: "Web Development",
       content:
-        "Even though I have a background as a System Developer, I have developed a strong interest in web development. I have worked with various web development languages, such as, TypeScript, JavaScript, HTML and CSS. Additionally, I have knowledge in using libraries and framework, such as, React, Bootstrap, Node, JQuery and Tailwindcss. With my favorite combination being React, TypeScript and Tailwindcss. Which I have used to create this website!",
+        "Even though I have a background as a System Developer, I have developed a strong interest in web development. I have worked with various web development languages, such as, TypeScript, JavaScript, HTML and CSS. Additionally, I have knowledge in using libraries and frameworks, such as, React, Bootstrap, Node, JQuery and Tailwindcss. With my favorite combination being React, TypeScript and Tailwindcss. Which I have used to create this website!",
     },
     {
       id: "hobbies",
