@@ -95,7 +95,7 @@ function App() {
                 Below is one of my projects, called GymTime, that uses the
                 OpenAI API to create tailored gym workouts for the user. The
                 user can choose the length of the workout, which muscles to
-                train, what equipment to use, and more...
+                train, what equipment to use, and more.
               </p>
             </div>
             <div className="mt-4 pb-10">
@@ -105,6 +105,23 @@ function App() {
                 target="_blank"
               >
                 GymTime
+              </a>
+            </div>
+            <div>
+              <p className="text-lg text-gray-600 mb-6 font-mono">
+                You can also check you another API project of mine, which is a
+                mashup project. The project uses spotifys and the swedish radios
+                API:s. When you hear a song on the radio that you like, you can
+                with this project add it to your spotify list.
+              </p>
+            </div>
+            <div className="mt-4 pb-10">
+              <a
+                href="https://github.com/Gefors/MashupApi-Project"
+                className="text-blue-600 hover:text-blue-800 underline text-lg font-medium font-mono"
+                target="_blank"
+              >
+                MashupApi-Project
               </a>
             </div>
             <div>
