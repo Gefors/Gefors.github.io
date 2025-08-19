@@ -4,7 +4,7 @@ import PictureOne from "../../assets/MeSquare.jpg";
 import PictureThree from "../../assets/Bild_på_mig.jpg";
 import PictureFour from "../../assets/Italien.jpg";
 import PictureFive from "../../assets/ItalienUtsikt.jpg";
-import PictureSix from "../../assets/JobbaMedHund.jpg";
+import PictureSix from "../../assets/walterWithFriend.jpg";
 
 function PictureNet() {
   const [selectedImage, setSelectedImage] = useState<{
@@ -40,9 +40,9 @@ function PictureNet() {
       alt: "Italy view",
     },
     {
-      id: "Woorking with a dog...",
+      id: "Walter with a friend",
       src: PictureSix,
-      alt: "woorking with a dog",
+      alt: "Walter with a friend",
     },
   ];
 
